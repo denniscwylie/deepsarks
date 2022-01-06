@@ -153,7 +153,6 @@ for rep in range(100):
     model.compile(optimizer="Adam", loss="mse", metrics=["mse"])
     model.fit(xtrain.values, train.loc[:, 1].values,
               epochs=20, batch_size=512, validation_split=0.10)
-    
     testPred = model.predict(xtest.values)
     r2s.append(np.corrcoef(testPred[:, 0], test.loc[:, 1])[0, 1]**2)
 
