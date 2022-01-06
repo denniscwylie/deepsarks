@@ -22,7 +22,7 @@ an ANN (with 3 hidden layers) consist of:
 - supplemented with counts of all 1024 distinct pentamers.
 
 The feature extraction steps performed in this approach are performed
-during the execution of `urtecho\_2020\_deepsarks.py` by running (as
+during the execution of `urtecho_2020_deepsarks.py` by running (as
 subprocesses) the two julia scripts:
 - [**train_eigenboostsarks.jl**](train_eigenboostsarks.jl) and
 - [**score_eigenboostsarks.jl**](score_eigenboostsarks.jl)
