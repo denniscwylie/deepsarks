@@ -26,3 +26,11 @@ during the execution of `urtecho_2020_deepsarks.py` by running (as
 subprocesses) the two julia scripts:
 - [**train_eigenboostsarks.jl**](train_eigenboostsarks.jl) and
 - [**score_eigenboostsarks.jl**](score_eigenboostsarks.jl)
+
+These julia scripts require prior installation of Julia and several
+Julia packages---`Sarkses` itself, as well as `ArgParse`, `CSV`,
+`DataFrames`, `DataStructures`, `HTTP`, `JLD2`, and `Statistics`---in
+order to run. Other than `Sarkses` (installation of which is described
+at [Sarkses.jl](https://github.com/denniscwylie/Sarkses.jl)), all of
+these packages can be installed in the standard way using the
+[julia REPL package manager](https://docs.julialang.org/en/v1/stdlib/Pkg/).
