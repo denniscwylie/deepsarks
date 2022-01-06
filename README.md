@@ -19,8 +19,7 @@ an ANN (with 3 hidden layers) consist of:
   - employing PCA-summarization (top 3 PCs) of
   - gradient-boosted SArKS models (10 boosting stages, each resulting
     in a separate SArKS model),
-  combined with:
-- counts of all 1024 distinct pentamers
+- supplemented with counts of all 1024 distinct pentamers.
 
 The feature extraction steps performed in this approach are performed
 during the execution of `urtecho\_2020\_deepsarks.py` by running (as
