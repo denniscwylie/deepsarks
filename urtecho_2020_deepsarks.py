@@ -137,7 +137,7 @@ model.fit(xtrain.values, train.loc[:, 1].values,
 
 ## use trained ANN model to score test-set sequences:
 testPred = model.predict(xtest.values)
-np.corrcoef(testPred[:, 0], test.loc[:, 1])[0, 1]**2  ## 0.347973
+np.corrcoef(testPred[:, 0], test.loc[:, 1])[0, 1]**2  ## 0.348109627061179
 
 ## repeat ANN model training 100 times
 ## (to average over stochasticity in deep learning algorithms;
@@ -156,8 +156,8 @@ for rep in range(100):
     testPred = model.predict(xtest.values)
     r2s.append(np.corrcoef(testPred[:, 0], test.loc[:, 1])[0, 1]**2)
 
-np.mean(r2s)  ## 0.3562902080507185
-np.std(r2s)   ## 0.009238788083716365
+np.mean(r2s)  ## 0.3565044710169666
+np.std(r2s)   ## 0.009277319323443625
 
 ## =============================================================================
 ## assemble results into DataFrame and save as tsv file:
