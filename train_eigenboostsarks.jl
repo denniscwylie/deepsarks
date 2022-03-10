@@ -59,7 +59,7 @@ end;
 trainSeqs = nothing;
 if trainSeqsFile != nothing
     trainSeqs = Sarkses.readFasta(trainSeqsFile);
-    trainScores = OrderedDict([trainScoreDF[i, 1] => trainScoreDF[i, 2]
+    trainScores = OrderedDict([string(trainScoreDF[i, 1]) => trainScoreDF[i, 2]
                                for i in 1:size(trainScoreDF, 1)]);
 else
     trainSeqs = OrderedDict([string(i) => trainScoreDF[i, 1]
